@@ -1,5 +1,17 @@
 # Never Icons (never-icons)
 
+[![CI/CD for Never Icons](https://github.com/virilabs/never-icons/actions/workflows/nodejs.yml/badge.svg?branch=master)](https://github.com/virilabs/never-icons/actions/workflows/nodejs.yml)
+[![UI Kit Tests](https://github.com/virilabs/never-icons/actions/workflows/ui-kit.yml/badge.svg)](https://github.com/virilabs/never-icons/actions/workflows/ui-kit.yml)
+[![Coverage Status](https://img.shields.io/badge/coverage-manual--see--ui--kit-yellow?logo=codecov)](COVERAGE.md)
+[![Dependabot Status](https://img.shields.io/badge/dependabot-enabled-brightgreen?logo=dependabot)](https://github.com/virilabs/never-icons/pulls?q=is%3Apr+is%3Aopen+label%3Adependencies)
+[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
+
+---
+
+## Introduction
+
+This project contains the custom icon font for the Never Theme, developed using [icomoon](https://icomoon.io/).
+
 ---
 
 ## License & Usage Terms
