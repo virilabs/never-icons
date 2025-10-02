@@ -1,4 +1,5 @@
-dist/
+dist/*
+!dist/README.md
 node_modules/
 never-icons.zip
 .env

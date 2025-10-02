@@ -1,6 +1,13 @@
-const { test, expect } = require('@playwright/test');
-const fs = require('fs');
-const path = require('path');
+import { fileURLToPath } from 'url';
+import path from 'path';
+
+
+import { test, expect } from '@playwright/test';
+import fs from 'fs';
+import { injectAxe, checkA11y, getViolations } from 'axe-playwright';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Correct paths to demo and minified CSS
 const DEMO_PATH = path.join(__dirname, '../../demo/index.html');
@@ -50,8 +57,24 @@ test.describe('Never Icon Font Demo (Minified CSS & Accessibility)', () => {
       // Informative: role="img" and aria-label or adjacent .sr-only
       if (role === 'img') {
         expect(ariaHidden).toBeNull();
-        expect(ariaLabel || await icon.evaluate(el => !!el.nextElementSibling && el.nextElementSibling.classList.contains('sr-only'))).toBeTruthy();
+        expect(
+          ariaLabel ||
+          await icon.evaluate(el => !!el.nextElementSibling && el.nextElementSibling.classList.contains('sr-only'))
+        ).toBeTruthy();
       }
     }
   });
+
+  test('page passes axe accessibility checks', async ({ page }) => {
+    await page.goto('file://' + path.resolve(DEMO_PATH));
+    await injectAxe(page);
+    await checkA11y(page, null, {
+      detailedReport: true,
+      detailedReportOptions: { html: true }
+    });
+    // Log violations to console for debugging
+    const violations = await getViolations(page);
+    console.log(JSON.stringify(violations, null, 2));
+  });
 });
+
