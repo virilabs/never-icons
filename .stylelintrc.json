@@ -1,0 +1,23 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-recommended-scss"
+  ],
+  "plugins": [
+    "stylelint-scss"
+  ],
+  "rules": {
+    "at-rule-no-unknown": null,
+    "scss/at-rule-no-unknown": true,
+    "block-no-empty": true,
+    "color-no-invalid-hex": true,
+    "declaration-block-no-duplicate-properties": true,
+    "declaration-block-no-shorthand-property-overrides": true,
+    "font-family-no-duplicate-names": true,
+    "function-calc-no-unspaced-operator": true,
+    "no-descending-specificity": null,
+    "property-no-unknown": [true, {"ignoreProperties": ["composes"]}],
+    "selector-pseudo-class-no-unknown": [true, {"ignorePseudoClasses": ["global"]}],
+    "selector-type-no-unknown": [true, {"ignoreTypes": ["/^my-/"]}]
+  }
+}

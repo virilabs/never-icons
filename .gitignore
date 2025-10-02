@@ -1,6 +1,9 @@
 dist/*
 !dist/README.md
 node_modules/
+test-results/
+.DS_Store
+Thumbs.db
 never-icons.zip
 .env
 npm-debug.log*

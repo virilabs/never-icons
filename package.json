@@ -15,7 +15,9 @@
         "build": "npm run clean && npm run sass && npm run postcss && npm run copy:fonts",
         "test": "npx playwright test project/scripts/",
         "zip": "npm run build && node project/scripts/zip-dist.js",
-        "demo": "open demo/index.html"
+        "demo": "open demo/index.html",
+        "lint": "stylelint \"src/**/*.scss\" \"src/**/*.css\"",
+        "prepare": "npm run build"
     },
     "devDependencies": {
         "@playwright/test": "^1.55.1",
@@ -29,6 +31,10 @@
         "postcss": "^8.0.0",
         "postcss-cli": "^10.0.0",
         "postcss-scss": "^4.0.9",
-        "rimraf": "^6.0.1"
+        "rimraf": "^6.0.1",
+        "stylelint": "^16.24.0",
+        "stylelint-config-recommended-scss": "^16.0.2",
+        "stylelint-config-standard": "^39.0.0",
+        "stylelint-scss": "^6.12.1"
     }
 }

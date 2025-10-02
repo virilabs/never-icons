@@ -14,6 +14,19 @@ This project contains the custom icon font for the Never Theme, developed using 
 
 ---
 
+## Summary Table
+
+| Folder/File         | Purpose                                 |
+|---------------------|-----------------------------------------|
+| `src/`              | Source SCSS and icon assets             |
+| `dist/`             | Built CSS, fonts, and distributables    |
+| `demo/`             | Demo HTML for icon preview              |
+| `project/scripts/`  | Build/test/zip scripts                  |
+| `icon-manifest.json`| Metadata for icons                      |
+
+---
+
+
 ## License & Usage Terms
 
 This icon font and all associated SVGs, CSS, and demo assets are licensed under the GNU General Public License v2.0 (GPLv2) unless otherwise noted.
