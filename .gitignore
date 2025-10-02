@@ -1,0 +1,5 @@
+dist/
+node_modules/
+never-icons.zip
+.env
+npm-debug.log*

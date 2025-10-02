@@ -1,0 +1,32 @@
+{
+    "name": "never-icons",
+    "version": "1.0.3",
+    "private": true,
+    "description": "Custom icon font and SVG assets for the Never theme, generated with IcoMoon.",
+    "author": "Virilabs Studio",
+    "license": "GPLv2",
+    "main": "src/never-icons.scss",
+    "scripts": {
+        "clean": "rimraf dist",
+        "clean:zip": "rimraf never-icons.zip",
+        "sass": "sass src/never-icons.scss:dist/css/never-icons.css --source-map --embed-source-map",
+        "postcss": "postcss dist/css/never-icons.css -o dist/css/never-icons.min.css --map inline",
+        "copy:fonts": "copyfiles -u 2 \"src/fonts/**/*\" dist/fonts/never-icons/",
+        "build": "npm run clean && npm run sass && npm run postcss && npm run copy:fonts",
+        "test": "npx playwright test project/scripts/",
+        "zip": "npm run build && node project/scripts/zip-dist.js",
+        "demo": "open demo/index.html"
+    },
+    "devDependencies": {
+        "@playwright/test": "^1.55.1",
+        "archiver": "^7.0.1",
+        "autoprefixer": "^10.4.21",
+        "copyfiles": "^2.4.1",
+        "cssnano": "^7.1.1",
+        "open": "^10.2.0",
+        "postcss": "^8.0.0",
+        "postcss-cli": "^10.0.0",
+        "postcss-scss": "^4.0.9",
+        "rimraf": "^6.0.1"
+    }
+}

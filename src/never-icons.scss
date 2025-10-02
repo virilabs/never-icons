@@ -1,0 +1,603 @@
+// =============================================================================
+// Never Theme Icon Font Styles
+// Complete icon font implementation with optimized CSS classes
+// =============================================================================
+
+@use "icons-variables" as *;
+
+// Font Face Declaration
+@font-face {
+  font-family: "#{$icons-font-family}";
+  src: url("#{$icons-font-path}/#{$icons-font-family}.eot?l2gcw6");
+  src:
+    url("#{$icons-font-path}/#{$icons-font-family}.eot?l2gcw6#iefix")
+      format("embedded-opentype"),
+    url("#{$icons-font-path}/#{$icons-font-family}.ttf?l2gcw6")
+      format("truetype"),
+    url("#{$icons-font-path}/#{$icons-font-family}.woff?l2gcw6") format("woff"),
+    url("#{$icons-font-path}/#{$icons-font-family}.svg?l2gcw6##{$icons-font-family}")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+// =============================================================================
+// Base Icon Font Styles
+// Common styles for all icon classes
+// =============================================================================
+
+[class^="nv-"],
+[class*=" nv-"] {
+  /* Use !important to prevent issues with browser extensions that change fonts */
+  font-family: "#{$icons-font-family}" !important;
+  speak-as: never;
+  font-style: normal;
+  font-weight: 400 !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &::before {
+    /* Common properties for all icon pseudo-elements */
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+// =============================================================================
+// Icon Helper Classes
+// Additional utility classes for common icon needs
+// =============================================================================
+
+.nv-icon {
+  &--lg {
+    font-size: 1.3333em;
+    line-height: 0.75em;
+    vertical-align: -15%;
+  }
+
+  &--2x {
+    font-size: 2em;
+  }
+
+  &--3x {
+    font-size: 3em;
+  }
+
+  &--4x {
+    font-size: 4em;
+  }
+
+  &--5x {
+    font-size: 5em;
+  }
+
+  &--fw {
+    width: 1.2857em;
+    text-align: center;
+  }
+
+  &--ul {
+    list-style-type: none;
+    margin-left: 2.1429em;
+    padding-left: 0;
+  }
+
+  &--border {
+    padding: 0.2em 0.25em 0.15em;
+    border: solid 0.08em #eee;
+    border-radius: 0.1em;
+  }
+
+  &--pull-left {
+    float: left;
+    margin-right: 0.3em;
+  }
+
+  &--pull-right {
+    float: right;
+    margin-left: 0.3em;
+  }
+
+  &--spin {
+    animation: nv-spin 2s infinite linear;
+  }
+
+  &--pulse {
+    animation: nv-spin 1s infinite steps(8);
+  }
+}
+
+// =============================================================================
+// Icon Animations
+// =============================================================================
+
+@keyframes nv-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(359deg); }
+}
+
+// =============================================================================
+// Individual Icon Classes
+// Generated automatically from variables
+// =============================================================================
+
+.nv-never {
+  &::before {
+    content: $nv-never; 
+  }
+}
+
+.nv-zoom {
+  &::before {
+    content: $nv-zoom; 
+  }
+}
+
+.nv-youtube-square {
+  &::before {
+    content: $nv-youtube-square; 
+  }
+}
+
+.nv-youtube {
+  &::before {
+    content: $nv-youtube; 
+  }
+}
+
+.nv-yelp {
+  &::before {
+    content: $nv-yelp; 
+  }
+}
+
+.nv-xing-square {
+  &::before {
+    content: $nv-xing-square; 
+  }
+}
+
+.nv-xing {
+  &::before {
+    content: $nv-xing; 
+  }
+}
+
+.nv-x {
+  &::before {
+    content: $nv-x; 
+  }
+}
+
+.nv-wordpress {
+  &::before {
+    content: $nv-wordpress; 
+  }
+}
+
+.nv-whatsapp {
+  &::before {
+    content: $nv-whatsapp; 
+  }
+}
+
+.nv-wechat {
+  &::before {
+    content: $nv-wechat; 
+  }
+}
+
+.nv-vk-square {
+  &::before {
+    content: $nv-vk-square; 
+  }
+}
+
+.nv-vk {
+  &::before {
+    content: $nv-vk; 
+  }
+}
+
+.nv-vimeo-square {
+  &::before {
+    content: $nv-vimeo-square; 
+  }
+}
+
+.nv-vimeo {
+  &::before {
+    content: $nv-vimeo; 
+  }
+}
+
+.nv-viber {
+  &::before {
+    content: $nv-viber; 
+  }
+}
+
+.nv-twitch {
+  &::before {
+    content: $nv-twitch; 
+  }
+}
+
+.nv-tumblr-square {
+  &::before {
+    content: $nv-tumblr-square; 
+  }
+}
+
+.nv-tumblr {
+  &::before {
+    content: $nv-tumblr; 
+  }
+}
+
+.nv-twitter-square {
+  &::before {
+    content: $nv-twitter-square; 
+  }
+}
+
+.nv-twitter {
+  &::before {
+    content: $nv-twitter; 
+  }
+}
+
+.nv-tripadvisor {
+  &::before {
+    content: $nv-tripadvisor; 
+  }
+}
+
+.nv-trello {
+  &::before {
+    content: $nv-trello; 
+  }
+}
+
+.nv-tinder {
+  &::before {
+    content: $nv-tinder; 
+  }
+}
+
+.nv-tiktok {
+  &::before {
+    content: $nv-tiktok; 
+  }
+}
+
+.nv-telegram-circle {
+  &::before {
+    content: $nv-telegram-circle; 
+  }
+}
+
+.nv-telegram {
+  &::before {
+    content: $nv-telegram; 
+  }
+}
+
+.nv-steam-square {
+  &::before {
+    content: $nv-steam-square; 
+  }
+}
+
+.nv-steam {
+  &::before {
+    content: $nv-steam; 
+  }
+}
+
+.nv-stack-overflow {
+  &::before {
+    content: $nv-stack-overflow; 
+  }
+}
+
+.nv-spotify {
+  &::before {
+    content: $nv-spotify; 
+  }
+}
+
+.nv-soundcloud-square {
+  &::before {
+    content: $nv-soundcloud-square; 
+  }
+}
+
+.nv-soundcloud {
+  &::before {
+    content: $nv-soundcloud; 
+  }
+}
+
+.nv-snapchat-circle {
+  &::before {
+    content: $nv-snapchat-circle; 
+  }
+}
+
+.nv-snapchat {
+  &::before {
+    content: $nv-snapchat; 
+  }
+}
+
+.nv-slack {
+  &::before {
+    content: $nv-slack; 
+  }
+}
+
+.nv-skype {
+  &::before {
+    content: $nv-skype; 
+  }
+}
+
+.nv-reddit-circle {
+  &::before {
+    content: $nv-reddit-circle; 
+  }
+}
+
+.nv-reddit {
+  &::before {
+    content: $nv-reddit; 
+  }
+}
+
+.nv-quora {
+  &::before {
+    content: $nv-quora; 
+  }
+}
+
+.nv-pinterest-circle {
+  &::before {
+    content: $nv-pinterest-circle; 
+  }
+}
+
+.nv-pinterest {
+  &::before {
+    content: $nv-pinterest; 
+  }
+}
+
+.nv-paypal {
+  &::before {
+    content: $nv-paypal; 
+  }
+}
+
+.nv-patreon {
+  &::before {
+    content: $nv-patreon; 
+  }
+}
+
+.nv-odnoklassniki-square {
+  &::before {
+    content: $nv-odnoklassniki-square; 
+  }
+}
+
+.nv-odnoklassniki {
+  &::before {
+    content: $nv-odnoklassniki; 
+  }
+}
+
+.nv-messenger {
+  &::before {
+    content: $nv-messenger; 
+  }
+}
+
+.nv-medium-square {
+  &::before {
+    content: $nv-medium-square; 
+  }
+}
+
+.nv-medium {
+  &::before {
+    content: $nv-medium; 
+  }
+}
+
+.nv-mastodon {
+  &::before {
+    content: $nv-mastodon; 
+  }
+}
+
+.nv-linkedin {
+  &::before {
+    content: $nv-linkedin; 
+  }
+}
+
+.nv-line {
+  &::before {
+    content: $nv-line; 
+  }
+}
+
+.nv-kickstarter {
+  &::before {
+    content: $nv-kickstarter; 
+  }
+}
+
+.nv-instagram {
+  &::before {
+    content: $nv-instagram; 
+  }
+}
+
+.nv-hangouts {
+  &::before {
+    content: $nv-hangouts; 
+  }
+}
+
+.nv-google-drive {
+  &::before {
+    content: $nv-google-drive; 
+  }
+}
+
+.nv-google-play {
+  &::before {
+    content: $nv-google-play; 
+  }
+}
+
+.nv-google {
+  &::before {
+    content: $nv-google; 
+  }
+}
+
+.nv-gitlab {
+  &::before {
+    content: $nv-gitlab; 
+  }
+}
+
+.nv-github {
+  &::before {
+    content: $nv-github; 
+  }
+}
+
+.nv-github-square {
+  &::before {
+    content: $nv-github-square; 
+  }
+}
+
+.nv-foursquare {
+  &::before {
+    content: $nv-foursquare; 
+  }
+}
+
+.nv-flickr-square {
+  &::before {
+    content: $nv-flickr-square; 
+  }
+}
+
+.nv-flickr {
+  &::before {
+    content: $nv-flickr; 
+  }
+}
+
+.nv-facebook-square {
+  &::before {
+    content: $nv-facebook-square; 
+  }
+}
+
+.nv-facebook {
+  &::before {
+    content: $nv-facebook; 
+  }
+}
+
+.nv-evernote {
+  &::before {
+    content: $nv-evernote; 
+  }
+}
+
+.nv-drupal {
+  &::before {
+    content: $nv-drupal; 
+  }
+}
+
+.nv-dropbox {
+  &::before {
+    content: $nv-dropbox; 
+  }
+}
+
+.nv-dribbble {
+  &::before {
+    content: $nv-dribbble; 
+  }
+}
+
+.nv-disqus {
+  &::before {
+    content: $nv-disqus; 
+  }
+}
+
+.nv-discord {
+  &::before {
+    content: $nv-discord; 
+  }
+}
+
+.nv-codepen {
+  &::before {
+    content: $nv-codepen; 
+  }
+}
+
+.nv-blogger {
+  &::before {
+    content: $nv-blogger; 
+  }
+}
+
+.nv-behance {
+  &::before {
+    content: $nv-behance; 
+  }
+}
+
+.nv-applepay {
+  &::before {
+    content: $nv-applepay; 
+  }
+}
+
+.nv-apple {
+  &::before {
+    content: $nv-apple; 
+  }
+}
+
+.nv-amazon {
+  &::before {
+    content: $nv-amazon; 
+  }
+}
+
+.nv-airbnb {
+  &::before {
+    content: $nv-airbnb; 
+  }
+}
