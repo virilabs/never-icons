@@ -5,13 +5,13 @@ This manifest lists all icon class names and their Unicode values for the Never 
 Use this as a reference for available icons and their CSS classes.
 
 - **How to use:**
-	- Reference the class name (e.g., `nv-github`) in your HTML or CSS.
-	- The Unicode value is used internally by the font and for troubleshooting.
+  - Reference the class name (e.g., `nv-github`) in your HTML or CSS.
+- The Unicode value is used internally by the font and for troubleshooting.
 
 - **How to add new icons:**
-	- Add your SVG to `src/icons/SVG/`.
-	- Update `icon-manifest.json` with the new icon's metadata.
-	- Rebuild the project to update the font and manifest.
+- Add your SVG to `src/icons/SVG/`.
+- Update `icon-manifest.json` with the new icon's metadata.
+- Rebuild the project to update the font and manifest.
 
 See the table below for all available icons.
 

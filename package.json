@@ -1,7 +1,6 @@
 {
     "name": "never-icons",
     "version": "1.0.3",
-    "private": true,
     "description": "Custom icon font and SVG assets for the Never theme, generated with IcoMoon.",
     "author": "Virilabs Studio",
     "license": "GPLv2",

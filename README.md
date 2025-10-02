@@ -26,8 +26,6 @@ This project contains the custom icon font for the Never Theme, developed using 
 
 ---
 
-
-
 ## Usage Examples
 
 ### HTML
