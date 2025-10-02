@@ -27,6 +27,58 @@ This project contains the custom icon font for the Never Theme, developed using 
 ---
 
 
+
+## Usage Examples
+
+### HTML
+
+```html
+<link rel="stylesheet" href="dist/css/never-icons.min.css">
+<i class="nv-github"></i>
+```
+
+### SCSS
+
+```scss
+@import "never-icons";
+.my-icon {
+  @extend .nv-github;
+  color: #333;
+}
+```
+
+### CSS
+
+```css
+.nv-github {
+  font-family: 'never-icons';
+  font-style: normal;
+  /* ... */
+}
+```
+
+---
+
+## Build & Test Workflow
+
+- Build: `npm run build`
+- Lint SCSS/CSS: `npm run lint`
+- Test (Playwright): `npm test`
+- Prepare (auto-build before publish): `npm run prepare`
+
+### Contributing New Icons
+
+1. Add SVGs to `src/icons/SVG/`.
+2. Update `icon-manifest.json` with new icon metadata.
+3. Run the build and test scripts.
+4. Submit a pull request with your changes.
+
+## Icon Manifest
+
+The `icon-manifest.json` file contains metadata for all icons (name, unicode, tags, etc.) and is used to generate the font and documentation.
+
+---
+
 ## License & Usage Terms
 
 This icon font and all associated SVGs, CSS, and demo assets are licensed under the GNU General Public License v2.0 (GPLv2) unless otherwise noted.
